@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Sensores | EduPortal</title>
+  <!-- Enlace a la hoja de estilos externa e independiente -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-container">
+        <span class="logo-badge">micro:bit</span>
+        <span class="logo-text">En el Aula</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="la_placa_microbit.html" class="nav-link">La Placa</a></li>
+        <li><a href="primeros_pasos.html" class="nav-link">Primeros Pasos</a></li>
+        <li><a href="utilizando_sensores.html" class="nav-link">Sensores</a></li>
+        <li><a href="ejemplos_sensores.html" class="nav-link active">Ejemplos</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Más Recursos ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/fichas/" target="_blank" class="dropdown-item">Fichas Didácticas</a></li>
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/manuales/" target="_blank" class="dropdown-item">Manuales Ceibal</a></li>
+            <li><a href="https://makecode.microbit.org/" target="_blank" class="dropdown-item">MakeCode Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    <article class="content-card">
+      <h1>Ejemplos Prácticos con Sensores</h1>
+
+      <section>
+        <h2>1. Termómetro Digital (Sensor de Temperatura)</h2>
+        <p>
+          Este proyecto convierte la micro:bit en un termómetro ambiental que muestra la temperatura en grados Celsius al presionar el botón A.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Bloque de inicio:</strong> <code>al presionar el botón A</code></li>
+          <li><strong>Acción:</strong> <code>mostrar número (temperatura ºC)</code></li>
+          <li><strong>Lógica sugerida:</strong> Si la temperatura sube de 30°C, mostrar un icono de alerta o un sonido.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. Luz Nocturna Automática (Sensor de Luz)</h2>
+        <p>
+          Simula el funcionamiento de las luces de alumbrado público que se encienden automáticamente cuando oscurece.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Bloque principal:</strong> <code>para siempre</code></li>
+          <li><strong>Condición:</strong> Si <code>nivel de luz &lt; 50</code>, encender la pantalla LED (mostrar icono o matriz llena).</li>
+          <li><strong>Sino:</strong> Apagar la pantalla LED (borrar la pantalla).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Dado Digital (Acelerómetro)</h2>
+        <p>
+          Aprovechando la detección de movimiento del acelerómetro, podemos simular un dado interactivo para juegos de mesa.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Evento de entrada:</strong> <code>si la placa se agita</code> (shake).</li>
+          <li><strong>Acción:</strong> Generar un número aleatorio entre 1 y 6 y mostrarlo en la pantalla LED.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Brújula Digital (Sensor Magnético)</h2>
+        <p>
+          Muestra en la pantalla la dirección hacia la cual apunta la micro:bit en grados geográficos (0° Norte, 90° Este, 180° Sur, 270° Oeste).
+        </p>
+        <ul class="feature-list">
+          <li><strong>Bloque principal:</strong> <code>para siempre</code></li>
+          <li><strong>Lógica:</strong> Leer <code>dirección de la brújula (º)</code>.</li>
+          <li><strong>Indicador:</strong> Mostrar una flecha apuntando según el rango angular (ej. entre 315° y 45° mostrar la flecha apuntando al Norte).</li>
+        </ul>
+      </section>
+
+      <div class="action-box">
+        <a href="https://makecode.microbit.org/" target="_blank" class="btn-primary">
+          🛠️ Probar estos ejemplos en MakeCode
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Portal Educativo micro:bit</p>
+  </footer>
+
+</body>
+</html>

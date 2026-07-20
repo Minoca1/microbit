@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeros Pasos | EduPortal</title>
+  <!-- Enlace a la hoja de estilos externa -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-container">
+        <span class="logo-badge">micro:bit</span>
+        <span class="logo-text">En el aula</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="la_placa_microbit.html" class="nav-link">La Placa</a></li>
+        <li><a href="primeros_pasos.html" class="nav-link active">Primeros Pasos</a></li>
+        <li><a href="utilizando_sensores.html" class="nav-link">Sensores</a></li>
+        <li><a href="ejemplos_sensores.html" class="nav-link">Ejemplos</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Más Recursos ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/fichas/" target="_blank" class="dropdown-item">Fichas Didácticas</a></li>
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/manuales/" target="_blank" class="dropdown-item">Manuales Ceibal</a></li>
+            <li><a href="https://makecode.microbit.org/" target="_blank" class="dropdown-item">MakeCode Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    <article class="content-card">
+      <h1>Primeros Pasos con micro:bit</h1>
+
+      <section>
+        <h2>¿Cómo se programa la micro:bit?</h2>
+        <p>
+          Para programar la placa micro:bit no necesitas instalar ningún programa complejo en tu computadora. Puedes hacerlo directamente desde tu navegador web utilizando la plataforma oficial <strong>Microsoft MakeCode</strong>.
+        </p>
+        <p>
+          MakeCode permite crear programas de forma visual utilizando <strong>bloques encajables</strong> (ideal para principiantes), así como también mediante código en <strong>JavaScript</strong> o <strong>Python</strong> para proyectos más avanzados.
+        </p>
+      </section>
+
+      <section>
+        <h2>El editor MakeCode</h2>
+        <p>
+          Al ingresar a MakeCode encontrarás tres zonas principales:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Simulador:</strong> Una representación virtual de la placa a la izquierda que te permite probar tu código inmediatamente sin necesidad de conectar la placa física.</li>
+          <li><strong>Caja de herramientas:</strong> Categorías ordenadas por colores (Básico, Entrada, Música, Bucles, Variables, etc.) que contienen todos los bloques disponibles.</li>
+          <li><strong>Área de trabajo:</strong> El espacio principal donde arrastras y conectas los bloques para armar la lógica de tu programa.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tu primer programa: Mostrar un icono</h2>
+        <p>
+          Sigue estos sencillos pasos para crear tu primer programa:
+        </p>
+        <ol class="feature-list">
+          <li>Abre el navegador e ingresa a <a href="https://makecode.microbit.org/" target="_blank">makecode.microbit.org</a>.</li>
+          <li>Haz clic en el botón <strong>"Nuevo proyecto"</strong> y asígnale un nombre.</li>
+          <li>En la categoría <strong>Básico</strong>, busca el bloque <code>mostrar icono</code>.</li>
+          <li>Arrastra el bloque y colócalo dentro del bloque <code>para siempre</code> o <code>al iniciar</code>.</li>
+          <li>Selecciona la figura que deseas mostrar (por ejemplo, un corazón o una carita feliz). ¡Verás cómo el simulador la muestra de inmediato!</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Cómo transferir el programa a tu placa</h2>
+        <p>
+          Una vez que tu programa funciona en el simulador, pásalo a tu tarjeta micro:bit física siguiendo estas instrucciones:
+        </p>
+        <ul class="feature-list">
+          <li><strong>1. Conectar:</strong> Une la tarjeta micro:bit a la computadora mediante el cable micro USB. La computadora la reconocerá como una unidad de almacenamiento externa (similar me a una memoria pendrive) llamada <strong>MICROBIT</strong>.</li>
+          <li><strong>2. Descargar:</strong> Haz clic en el botón verde <strong>"Descargar"</strong> situado en la esquina inferior izquierda del editor MakeCode. Se guardará un archivo con extensión <code>.hex</code> en tu computadora.</li>
+          <li><strong>3. Copiar:</strong> Arrastra o copia el archivo <code>.hex</code> descargado y pégalo dentro de la unidad <strong>MICROBIT</strong>.</li>
+          <li><strong>4. Ejecutar:</strong> La luz LED trasera de la placa parpadeará durante la transferencia. Una vez finalizada, ¡tu programa se ejecutará automáticamente en la placa!</li>
+        </ul>
+      </section>
+
+      <div class="action-box">
+        <a href="https://makecode.microbit.org/" target="_blank" class="btn-primary">
+          🚀 Ir al Editor Microsoft MakeCode
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>&copy; 2026 Portal Educativo micro:bit</p>
+  </footer>
+
+</body>
+</html>

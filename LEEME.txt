@@ -1,0 +1,12 @@
+SITIO MICRO:BIT EN EL AULA
+
+1. Abra index.html para ingresar al sitio.
+2. Mantenga todos los archivos y la carpeta "imagenes" dentro de la misma carpeta.
+3. Para agregar una nueva página:
+   - copie una de las páginas existentes;
+   - cambie el título y el contenido;
+   - agregue el enlace correspondiente al elemento <ul class="menu"> de todas las páginas.
+4. Las imágenes de la placa utilizadas por intro-microbit.html conservan las rutas originales:
+   ../imagenes/la_placa_microbit_1.png
+   ../imagenes/la_placa_microbit_2.png
+   Si esas imágenes no se encuentran en la carpeta superior "imagenes", copie allí los archivos o modifique las rutas.

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La placa micro:bit | EduPortal</title>
+  <!-- Enlace a la hoja de estilos externa e independiente -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-container">
+        <span class="logo-badge">micro:bit</span>
+        <span class="logo-text">En el Aula</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="la_placa_microbit.html" class="nav-link active">La Placa</a></li>
+        <li><a href="primeros_pasos.html" class="nav-link">Primeros Pasos</a></li>
+        <li><a href="utilizando_sensores.html" class="nav-link">Sensores</a></li>
+        <li><a href="ejemplos_sensores.html" class="nav-link">Ejemplos</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Más Recursos ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/fichas/" target="_blank" class="dropdown-item">Fichas Didácticas</a></li>
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/manuales/" target="_blank" class="dropdown-item">Manuales Ceibal</a></li>
+            <li><a href="https://makecode.microbit.org/" target="_blank" class="dropdown-item">MakeCode Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido de la Página -->
+  <main class="container">
+    <article class="content-card">
+      <h1>La placa micro:bit</h1>
+
+      <section>
+        <h2>Presentación de la placa</h2>
+        <p>
+          Micro:bit es una placa programable. Esto significa que posee un procesador
+          y otros componentes que la convierten en una pequeña computadora cuyo
+          comportamiento podemos programar de forma sencilla.
+        </p>
+        <p>
+          Esta placa surge en el Reino Unido como un proyecto de la BBC, con el
+          objetivo de introducir a niños y niñas en la programación y en la creación
+          de su propia tecnología de una manera amena y accesible.
+        </p>
+      </section>
+
+      <section>
+        <h2>Elementos</h2>
+        <p>
+          La placa micro:bit integra varios elementos con diferentes funciones.
+          Además del procesador, la memoria y el conector de alimentación, incluye
+          sensores y actuadores.
+        </p>
+        <ul class="feature-list">
+          <li>
+            <strong>Sensores:</strong> recogen información del exterior y la transmiten
+            al procesador. Por ejemplo: botones, sensor de temperatura, brújula,
+            sensor de luz o acelerómetro.
+          </li>
+          <li>
+            <strong>Actuadores:</strong> reciben instrucciones del procesador para
+            realizar una acción. Por ejemplo, una luz LED que se enciende o apaga.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Parte frontal</h2>
+        <div class="img-wrapper">
+          <img src="../imagenes/la_placa_microbit_1.png" alt="Parte frontal de la placa micro:bit" class="responsive-img">
+        </div>
+        <ul class="feature-list">
+          <li>Pantalla de 25 luces LED programables individualmente.</li>
+          <li>Dos botones programables: A y B.</li>
+          <li>25 pines externos para conectar otros elementos.</li>
+          <li>
+            Cinco pines grandes: 0, 1, 2, 3V y GND.
+            <ul class="sub-list">
+              <li><strong>0, 1 y 2:</strong> pines de entrada y salida.</li>
+              <li><strong>3V:</strong> pin de alimentación.</li>
+              <li><strong>GND:</strong> conexión a tierra para completar el circuito.</li>
+            </ul>
+          </li>
+          <li>20 pines pequeños para conectar la placa a un conector de borde.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Parte posterior</h2>
+        <div class="img-wrapper">
+          <img src="../imagenes/la_placa_microbit_2.png" alt="Parte posterior de la placa micro:bit" class="responsive-img">
+        </div>
+        <ul class="feature-list">
+          <li><strong>Procesador:</strong> ejecuta los programas y controla el funcionamiento de la placa.</li>
+          <li>Sensor de temperatura.</li>
+          <li>Brújula.</li>
+          <li><strong>Acelerómetro:</strong> detecta movimientos e inclinaciones.</li>
+          <li>Módulo de radio para comunicarse con otras micro:bits.</li>
+          <li>Módulo Bluetooth para conectarse con dispositivos móviles.</li>
+          <li>Puerto USB para conectar la placa a la computadora.</li>
+          <li>Botón de reset.</li>
+          <li>Conector JST para conectar baterías.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Nota sobre la alimentación</h2>
+        <p>Existen dos formas seguras de brindar energía a la micro:bit:</p>
+        <ul class="feature-list">
+          <li>Por medio del puerto micro USB, usando la energía de la computadora.</li>
+          <li>Por medio de baterías AAA de 1,5V conectadas al conector JST.</li>
+        </ul>
+      </section>
+
+      <div class="action-box">
+        <a href="https://documentos.ceibal.edu.uy/portal/2024/12/Micro_manual-1_La-placa-programable.pdf" target="_blank" class="btn-primary">
+          📄 Descargar Manual Completo de la micro:bit
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Portal Educativo micro:bit</p>
+  </footer>
+
+</body>
+</html>

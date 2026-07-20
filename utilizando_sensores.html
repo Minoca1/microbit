@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilizando sensores | EduPortal</title>
+  <!-- Enlace a la hoja de estilos externa e independiente -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-container">
+        <span class="logo-badge">micro:bit</span>
+        <span class="logo-text">En el Aula</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="la_placa_microbit.html" class="nav-link">La Placa</a></li>
+        <li><a href="primeros_pasos.html" class="nav-link">Primeros Pasos</a></li>
+        <li><a href="utilizando_sensores.html" class="nav-link active">Sensores</a></li>
+        <li><a href="ejemplos_sensores.html" class="nav-link">Ejemplos</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Más Recursos ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/fichas/" target="_blank" class="dropdown-item">Fichas Didácticas</a></li>
+            <li><a href="https://ceibal.edu.uy/plataformas-y-programas/microbit/manuales/" target="_blank" class="dropdown-item">Manuales Ceibal</a></li>
+            <li><a href="https://makecode.microbit.org/" target="_blank" class="dropdown-item">MakeCode Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido de la Página -->
+  <main class="container">
+    <article class="content-card">
+      <h1>Utilizando sensores</h1>
+
+      <section>
+        <h2>¿Qué es un sensor?</h2>
+        <p>
+          Un sensor es un dispositivo capaz de medir una propiedad de un medio, esta medición es convertida a un valor
+          numérico para que sea legible por una persona. En el contexto de las placas programables, éstas son capaces de
+          recibir información del medio en el que están a través de los sensores y eventualmente actuar en consecuencia.
+        </p>
+      </section>
+
+      <section>
+        <h2>Sensores de la micro:bit</h2>
+        <p>
+          La placa micro:bit posee sensor de temperatura, de nivel de luz, acelerómetro y brújula.
+        </p>
+
+        <h2>Sensor de temperatura</h2>
+        <p>
+          El sensor de temperatura mide la temperatura del procesador, la cual es muy similar a la temperatura ambiente
+          (diferencia de alrededor 1 grado Celsius).
+        </p>
+        <p>
+          La temperatura es dada en grados Celsius pero a través de las siguientes conversiones es posible pasar a K o ºF:
+        </p>
+        <ul class="feature-list">
+          <li>De Celsius a Kelvin: <code>K = ºC + 273</code></li>
+          <li>De Celsius a Fahrenheit: <code>ºF = (ºC * 1.8) + 32</code></li>
+        </ul>
+
+        <h2>Brújula</h2>
+        <p>
+          La brújula en la micro:bit nos indica cuántos grados es necesario girarla para encontrar el Norte geográfico.
+        </p>
+        <p>
+          Al inicio es necesario hacerle una pequeña calibración muy intuitiva que se muestra en el video de la derecha.
+        </p>
+
+        <h2>Nivel de luz</h2>
+        <p>
+          El sensor de nivel de luz mide cuánta luz hay en el ambiente y lo representa con un número entre 0 y 255 (0 - oscuridad total).
+        </p>
+        <p>
+          Este sensor se encuentra ubicado en los LEDs.
+        </p>
+
+        <h2>Acelerómetro</h2>
+        <p>
+          Un acelerómetro es un sensor capaz de medir aceleraciones. Por lo que es muy útil para saber si la placa está siendo agitada, está cayendo en caída libre, está posicionada en determinada dirección, etc.
+        </p>
+        <p>
+          Es un sensor de mucha utilidad para desarrollar proyectos relacionados con el movimiento.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Portal Educativo micro:bit</p>
+  </footer>
+
+</body>
+</html>
